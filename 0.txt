@@ -1,0 +1,28 @@
+1. made the uv venv
+2. run source .venv/bin/activate to run the file
+3. django installed using uv pip install Django.
+4. django-admin startproject Djangofolder : this will be the first command and then
+the different apps will be made
+current files: init,asgi,settings,urls,wsgi,dbsqlite,manage.py
+5. uv run ./manage.py runserver 8001  : for running the server
+6. manage.py level, project level: Djangofolder, app level, db.sqlite3 has no 
+relation with nosql,postgres
+7. in the project folder, multiple modules are included always in the pycache folder,
+settings.py: wht is the base directory, secret keys, Installed apps, middlewares,templates,
+databses
+8. urls.py : for the routing, routeurls
+9. Django is a web framework. under the hood they use some tech stack to access request,
+response,browser. have a look at image 1 and 2 for the diagram for complete understanding
+10. make the views.py(no change in file name) file as seen in the diagram above.
+11. in the views.py, imported the httpresponse, then make the function and return the httpresponse
+12. views always send response.templates are used extensively in django
+13. make the folder named templates for the html files and folder static for the css, js
+14. In the templates folder make the index.html file that we have to render in the the template
+15. In the settings.py file in the DIRS structure write templates in the directory otherwise it will not run
+16. In the templates folder we have made the website folder ,in this folder we have 
+index.html file so in the views.py file have to use the render and that particular folder
+17. by using the style.css in normal link style. style.css cant be accessed
+18. now we have imported os in the settings.py file and under the static url we have to add 
+Staticfiles_dirs = [os.path.join(BASE_DIR,'static')]. in the index.html file also add the 
+
+
