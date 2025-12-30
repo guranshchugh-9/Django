@@ -24,5 +24,14 @@ index.html file so in the views.py file have to use the render and that particul
 17. by using the style.css in normal link style. style.css cant be accessed
 18. now we have imported os in the settings.py file and under the static url we have to add 
 Staticfiles_dirs = [os.path.join(BASE_DIR,'static')]. in the index.html file also add the 
-
-
+{% load static %} and in the link also add the <link rel="stylesheet" href="{% static 'style.css' %}">
+29. we have added te django extension now
+30. manage.py is very important as its reqd to make the apps and run the server 
+31. make the new folder gura using this command uv run ./manage.py startapp gura
+32. our main project dont know at any point of time that these apps exist 
+33. in the settings.py file, make the changes in the APPS directory
+34. now make the new folder templates in the gura folder that includes all the apps 
+of the company
+35. make the app1 folder. include the app1.html in this file.
+36. make the url.py file in this.
+37. 
